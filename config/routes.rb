@@ -1,5 +1,7 @@
 Eighth::Application.routes.draw do
 
+  resources :microposts
+
   resources :users
 
   root :to => 'pages#home'
@@ -7,6 +9,6 @@ Eighth::Application.routes.draw do
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'
-  match '/signup',  :to => 'users#new'   # users not made yet!!!!
+  match '/signup',  :to => 'users#new'
   
 end
