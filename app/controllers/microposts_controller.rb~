@@ -1,4 +1,10 @@
 class MicropostsController < ApplicationController
+
+  # Common redirects
+  # redirect_to @micropost      ## go to index
+  # redirect_to micropost_url   ## go to show
+
+
   # GET /microposts
   # GET /microposts.json
   def index
@@ -73,16 +79,10 @@ class MicropostsController < ApplicationController
   # DELETE /microposts/1.json
   def destroy
     @micropost = Micropost.find(params[:id])
-    if @micropost.destroy
-      respond_to do |format|
-        format.html { redirect_to 'index', notice: 'Micropost was destroyed.' }
-        format.json { head :ok }
-      end
-    else
-      respond_to do |format|
-        format.html { redirect_to 'index', notice: 'Micropost was NOT destroyed.' }
-        format.json { head :ok }
-      end
+    @micropost.destroy
+    respond_to do |format|
+      format.html { redirect_to @micropost, notice: 'Micropost was destroyed.' }
+      format.json { head :ok }
     end
   end
 end
