@@ -71,30 +71,30 @@ class UsersController < ApplicationController
 
   # DELETE /users/1
   # DELETE /users/1.json
-#  def destroy
-#    @user = User.find(params[:id])
-#    @user.destroy
-#
-#    respond_to do |format|
-#      format.html { redirect_to users_url }
-#      format.json { head :ok }
-#    end
-#  end
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+
+    respond_to do |format|
+      format.html { redirect_to users_url }
+      format.json { head :ok }
+    end
+  end
   
   # DELETE /users/1
   #  Think of this as "a 'delete' request was submitted, so do it,
   #                                  then redirect somewhere above
   #                                          with a status message"
-  def destroy
-    @user = User.find(params[:id])
-    if request.delete? and @user.destroy
-      flash[:notice] = 'User was successfully deleted.'
-      redirect_to :action => 'index'
-    else
-      flash[:notice] = 'FAIL: User was NOT deleted.'
-      redirect_to :action => 'index'
-    end
-  end  
+#  def destroy
+#    @user = User.find(params[:id])
+#    if request.delete? and @user.destroy
+#      flash[:notice] = 'User was successfully deleted. '
+#      redirect_to :action => 'index'
+#    else
+#      flash[:notice] = 'FAIL: User was NOT deleted.'
+#      redirect_to :action => 'index'
+#    end
+#  end  
   
   
   
