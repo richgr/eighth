@@ -2,6 +2,7 @@
 <html>
   <head>
     <title><%= title %></title>
+    <%= render 'layouts/stylesheets' %>
   </head>
   <body>
     <div class="container">
