@@ -11,6 +11,8 @@ gem 'heroku'
 
 # Gems used only for assets and not required
 # in production environments by default.
+# Before deploying to production, assets need to be precompiled using 
+# >> rake assets:precompile
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
@@ -40,4 +42,8 @@ end
 
 group :development do
   gem 'rspec-rails'
+end
+
+group :production do
+  gem 'thin'
 end

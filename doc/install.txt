@@ -1,0 +1,13 @@
+All installation was conducted as per:
+
+1) Rails - RailsTutorial.org instructions (and in PDF)
+
+2) Postgres - http://xtremekforever.blogspot.com/2011/05/setup-rails-project-with-postgresql-on.html
+
+
+
+By the way
+
+The RailsTutorial.org has some great instructions, but for quick re-install, try page 95 (97 of 515) in the discussion of RSpec possible solutions.
+
+

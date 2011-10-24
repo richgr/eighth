@@ -1,0 +1,11 @@
+HTTP/1.1 302 Found
+Location: http://www.google.ca/
+Cache-Control: private
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: PREF=ID=e4065d40a5677965:FF=0:TM=1319458961:LM=1319458961:S=d_XMqit_h8IAOFvA; expires=Wed, 23-Oct-2013 12:22:41 GMT; path=/; domain=.google.com
+Date: Mon, 24 Oct 2011 12:22:41 GMT
+Server: gws
+Content-Length: 218
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+

@@ -1,0 +1,1000 @@
+ 1005  man grep
+ 1006  man find
+ 1007  vi Gemfile
+ 1008  vi Gemfile.lock 
+ 1009  vi Gemfile.orig 
+ 1010  rm Gemfile.orig 
+ 1011  git add .
+ 1012  git commit -m "fighting mad"
+ 1013  git push
+ 1014  git push heroku
+ 1015  heroku rake db:migrate
+ 1016  heroku console
+ 1017  clear
+ 1018  heroku create
+ 1019  git remote rm heroku
+ 1020  git remote add git@heroku.com:warm-fog-4239.git
+ 1021  git remote add heroku git@heroku.com:warm-fog-4239.git
+ 1022  heroku rake db:migrate
+ 1023  git push
+ 1024  git push heroku
+ 1025  git push heroku master
+ 1026  heroku rake db:migrate
+ 1027  heroku console
+ 1028  clear
+ 1029  ls
+ 1030  rm Gemfile~
+ 1031  rm Gemfile.lock 
+ 1032  vi config
+ 1033  vi config.ru 
+ 1034  vi Rakefile 
+ 1035  vi salt\:string 
+ 1036  git rm salt\:string
+ 1037  ls
+ 1038  cd app/
+ 1039  ls
+ 1040  cd assets/
+ 1041  ls
+ 1042  cat *
+ 1043  cd images/
+ 1044  ls
+ 1045  cd ../javascripts/
+ 1046  ls
+ 1047  cat *
+ 1048  clear
+ 1049  cd ..
+ 1050  ls
+ 1051  cd ..
+ 1052  ls
+ 1053  cd controllers/
+ 1054  ls
+ 1055  vi application_controller.rb 
+ 1056  clear
+ 1057  cat *
+ 1058  cd ..
+ 1059  ls
+ 1060  cd helpers/
+ 1061  ls
+ 1062  git rm *~
+ 1063  ls
+ 1064  vi application_helper.rb 
+ 1065  vi pages_helper.rb 
+ 1066  vi users_helper.rb
+ 1067  vi users_helper.rb.old 
+ 1068  cd ..
+ 1069  ls
+ 1070  vi mailers/
+ 1071  vi models/
+ 1072  cd models/
+ 1073  ls
+ 1074  vi user.rb
+ 1075  cp user.rb user.rb.good
+ 1076  vi user.rb
+ 1077  cd ..
+ 1078  ls
+ 1079  vi views/
+ 1080  cd views/
+ 1081  ls
+ 1082  cd layouts/
+ 1083  ls
+ 1084  vi application.html.erb
+ 1085  cd ..
+ 1086  ls
+ 1087  cd ..
+ 1088  ls
+ 1089  vi Gemfile 
+ 1090  cd ..
+ 1091  mkdir fifth
+ 1092  rmdir fifth/
+ 1093  ruby -v
+ 1094  which gem
+ 1095  cd ~/
+ 1096  ls
+ 1097  ls -la
+ 1098  la -a
+ 1099  cd .gem
+ 1100  ls
+ 1101  cd specs/
+ 1102  ls
+ 1103  cd rubygems.org%80/
+ 1104  ls
+ 1105  cd quick/
+ 1106  ls
+ 1107  cd Marshal.4.8/
+ 1108  ls
+ 1109  cd /var/www/fourth
+ 1110  ls
+ 1111  ls -a
+ 1112  cd ~/
+ 1113  vi .gemrc
+ 1114  rails -v
+ 1115  cd /var/www
+ 1116  rails new fifth
+ 1117  cd fifth/
+ 1118  ls
+ 1119  vi Gemfile
+ 1120  rvm notes
+ 1121  vi ~/.rvmrc
+ 1122  exit
+ 1123  rails s
+ 1124  exit
+ 1125  rails s
+ 1126  cd ../sixth/
+ 1127  rails s
+ 1128  exit
+ 1129  cd
+ 1130  nano .bashrc 
+ 1131  vi .bashrc 
+ 1132  source .bashrc 
+ 1133  type rvm | head -1
+ 1134  gem update
+ 1135  cd /var/www/fifth/
+ 1136  gem update
+ 1137  gem update --system
+ 1138  rails -v
+ 1139  sudo apt-get update
+ 1140  sudo apt-get upgrade
+ 1141  gem install capistrano
+ 1142  cap -V
+ 1143  sudo apt-get install postgresql libpq-dev
+ 1144  rails s
+ 1145  git config
+ 1146  git config --global user.name "Graham Rich"
+ 1147  git config --global user.email richgr@gmail.com
+ 1148  git config --global core.editor "vi -f"
+ 1149  man vi
+ 1150  git init
+ 1151  vi .gitignore 
+ 1152  git add .
+ 1153  git status
+ 1154  git commit -m "Initial commit"
+ 1155  git log
+ 1156  git push -u origin master
+ 1157  vi ../fourth/README.markdown 
+ 1158  git mv README README.markdown
+ 1159  vi README.markdown 
+ 1160  git add .
+ 1161  git commit -m "README now up-to-date"
+ 1162  git push
+ 1163  vi README.markdown 
+ 1164  git add .
+ 1165  git commit -m "reformatted README.markdown"
+ 1166  git push
+ 1167  git push heroku master
+ 1168  heroku create
+ 1169  git checkout -b new_index
+ 1170  cd public/
+ 1171  ls
+ 1172  vi index.html 
+ 1173  git branch
+ 1174  cd ..
+ 1175  git status
+ 1176  git add .
+ 1177  git commit -m "updated index.html"
+ 1178  git status
+ 1179  git push
+ 1180  git checkout new_index 
+ 1181  git push origin HEAD
+ 1182  git push heroku HEAD
+ 1183  git push heroku origin
+ 1184  git push heroku origin HEAD
+ 1185  git push heroku
+ 1186  git branch
+ 1187  git push heroku new_index:master
+ 1188  history > his.txt
+ 1189  vi his.txt 
+ 1190  mv his.txt start_over_history.txt
+ 1191  bundle install
+ 1192  rails generate scaffold User name:string email:string
+ 1193  vi Gemfile
+ 1194  gem install pg
+ 1195  bundle install
+ 1196  cd ..
+ 1197  cd fifth/
+ 1198  ls
+ 1199  ls -a
+ 1200  cp README.markdown ../.
+ 1201  cd ..
+ 1202  ls
+ 1203  cd fifth/
+ 1204  ls
+ 1205  cd ../
+ 1206  mkdir sixth
+ 1207  cd sixth/
+ 1208  rails new sixth -d postgresql
+ 1209  ls
+ 1210  cd ..
+ 1211  rm -rf sixth/
+ 1212  rails new sixth -d postgresql
+ 1213  cp README.markdown sixth/.
+ 1214  ls
+ 1215  rm README.markdown 
+ 1216  ls
+ 1217  cd sixth/
+ 1218  ls
+ 1219  rm README
+ 1220  git init
+ 1221  vi config/database.yml 
+ 1222  cd ..
+ 1223  cd fourth
+ 1224  vi config/database.yml
+ 1225  git add .
+ 1226  git commit -m "changed database config - removed 'localhost' in production"
+ 1227  git push
+ 1228  git branch
+ 1229  git push heroku
+ 1230  bundle install
+ 1231  git push heroku
+ 1232  vi Gemfile
+ 1233  bundle instal
+ 1234  bundle install
+ 1235  git push master
+ 1236  git branch
+ 1237  cd ..
+ 1238  mkdir backup
+ 1239  cd backup/
+ 1240  ls
+ 1241  cd richgr-fourth-0dffd5b/
+ 1242  ls
+ 1243  cd ..
+ 1244  mv richgr-fourth-0dffd5b fourth
+ 1245  ls
+ 1246  cd fourth/
+ 1247  ls
+ 1248  git branch
+ 1249  ls -a
+ 1250  cd ../../fourth
+ 1251  ls
+ 1252  ls -a
+ 1253  cd ../backup/fourth/
+ 1254  ls
+ 1255  vi config/database.yml
+ 1256  git init
+ 1257  git add .
+ 1258  git commit -m "changed database config again"
+ 1259  git branch
+ 1260  git remote add origin git@github.com:richgr/fourth.git
+ 1261  git push -u origin master
+ 1262  git push
+ 1263  git push master
+ 1264  git add .
+ 1265  git commit -m "trying again"
+ 1266  git branch
+ 1267  git push master
+ 1268  git push origin master
+ 1269  git pull
+ 1270  git pull master git@github.com:richgr/fourth.git
+ 1271  git branch
+ 1272  git branch -n "testing"
+ 1273  cd ..
+ 1274  mv fourth fourth_fail
+ 1275  git pull git@github.com:richgr/fourth.git
+ 1276  man git clone
+ 1277  git clone . git remote add origin git@github.com:richgr/fourth.git
+ 1278  git clone . git@github.com:richgr/fourth.git
+ 1279  git remote add origin git@github.com:richgr/fourth.git
+ 1280  mkdir fourth
+ 1281  cd fourth
+ 1282  git init
+ 1283  git remote add origin git@github.com:richgr/fourth.git
+ 1284  git clone . git@github.com:richgr/fourth.git
+ 1285  ls
+ 1286  cd git@github.com\:richgr/
+ 1287  ls
+ 1288  cd fourth.git/
+ 1289  ls
+ 1290  cd ../..
+ 1291  rmdir git@github.com\:richgr
+ 1292  rmdir -rf git@github.com\:richgr
+ 1293  ls
+ 1294  rmdir -Rf git@github.com\:richgr
+ 1295  rm -rf git@github.com\:richgr/
+ 1296  ls
+ 1297  ls -a
+ 1298  git pull git@github.com:richgr/fourth.git
+ 1299  ls
+ 1300  vi config/database.yml
+ 1301  git add .
+ 1302  git commit -m "database config change again"
+ 1303  git push
+ 1304  git push heroku
+ 1305  heroku create
+ 1306  ls
+ 1307  git push heroku
+ 1308  git push master
+ 1309  git push heroku master
+ 1310  rm Gemfile~
+ 1311  vi Gemfile.
+ 1312  vi Gemfile.lock 
+ 1313  rm Gemfile.lock 
+ 1314  ls
+ 1315  bundle install
+ 1316  git push
+ 1317  git push heroku master
+ 1318  man git push
+ 1319  git push -f master
+ 1320  git branch
+ 1321  history | branch
+ 1322  history | grep branch
+ 1323  git branch newbie
+ 1324  git branch
+ 1325  git checkout newbie
+ 1326  ls
+ 1327  vi Gemfile.orig 
+ 1328  gem add .
+ 1329  git add .
+ 1330  git commit -m "anotherrrrr"
+ 1331  git checkout master
+ 1332  git merge newbie 
+ 1333  git add .
+ 1334  git commit -m "pleassssssse"
+ 1335  git push master
+ 1336  git
+ 1337  git push
+ 1338  git push heroku
+ 1339  git push -f master
+ 1340  cd ../..
+ 1341  ls
+ 1342  cd sixth/
+ 1343  ls
+ 1344  git branch
+ 1345  ls -a
+ 1346  bundle install
+ 1347  clear
+ 1348  ls
+ 1349  vi README.markdown 
+ 1350  vi public/index.html 
+ 1351  git init
+ 1352  git add .
+ 1353  git commit -m "changed index.html"
+ 1354  git commit -m "Initial Commit..."
+ 1355  git push master
+ 1356  git push origin master
+ 1357  git remote add origin git@github.com:richgr/sixth.git
+ 1358  git push -u origin master
+ 1359  rails generate scaffold User name:string email:string
+ 1360  bundle install
+ 1361  history > his.txt
+ 1362  vi his.txt 
+ 1363  heroku open
+ 1364  heroku create
+ 1365  git push heroku master
+ 1366  heroku open
+ 1367  ls
+ 1368  bundle exec rake db:migrate
+ 1369  vi config/database.yml 
+ 1370  bundle exec rake db:migrate
+ 1371  git add .
+ 1372  git commit -m "pg db working locally"
+ 1373  git push
+ 1374  git push heroku
+ 1375  heroku console
+ 1376  clear
+ 1377  vi config/routes.rb 
+ 1378  vi app/controllers/users_controller.rb 
+ 1379  rails generate scaffold Micropost message:string user_id:integer
+ 1380  bundle exec rake db:migrate
+ 1381  vi config/routes.rb 
+ 1382  vi app/models/micropost.rb 
+ 1383  vi app/models/user.rb 
+ 1384  vi app/models/micropost.rb 
+ 1385  git add .
+ 1386  git commit -m "done with first"
+ 1387  git push
+ 1388  git push heroku
+ 1389  heroku rake db:migrate
+ 1390  gem install taps
+ 1391  heroku db:push
+ 1392  heroku db:push --confirm stormy-sky-6112
+ 1393  pg_dump sixth_development > sixthdb.txt
+ 1394  sudo pg_dump sixth_development > sixthdb.txt
+ 1395  man pg_dump
+ 1396  pg_dump -U sixth sixth_development > sixthdb.txt
+ 1397  vi sixthdb.txt 
+ 1398  cp sixthdb.txt ~/Dropbox/Public/.
+ 1399  heroku pgbackups:restore stormy-sky-6112 'http://dl.dropbox.com/u/43479453/sixthdb.txt'
+ 1400  heroku addons:add pgbackups
+ 1401  heroku pgbackups:capture
+ 1402  ls
+ 1403  heroku pgbackups
+ 1404  heroku pgbackups:url b001
+ 1405  heroku pgbackups:restore SHARED_DATABASE 'http://dl.dropbox.com/u/43479453/sixthdb.txt'
+ 1406  heroku pgbackups:capture
+ 1407  heroku pgbackups
+ 1408  heroku pgbackups:url b002
+ 1409  heroku pgbackups:restore SHARED_DATABASE 'http://dl.dropbox.com/u/43479453/dump.sql.gz'
+ 1410  rm Gemfile.lock 
+ 1411  bundle install
+ 1412  heroku plugins:install git://github.com/ddollar/heroku-accounts.git
+ 1413  heroku accounts:add sixth --auto
+ 1414  heroku accounts
+ 1415  ls /home/richgr/.ssh/
+ 1416  cat ~/.ssh/id_rsa
+ 1417  cat ~/.ssh/identity.heroku.sixth
+ 1418  cd ~/.ssh/
+ 1419  ls
+ 1420  mkdir old
+ 1421  mv identity.heroku.sixth* old/.
+ 1422  cp id_rsa identity.heroku.sixth
+ 1423  cp id_rsa.pub identity.heroku.sixth.pub
+ 1424  cd ..
+ 1425  cd /var/www/sixth/
+ 1426  ls
+ 1427  vi /home/richgr/.ssh/config 
+ 1428  heroku accounts:add work --auto
+ 1429  heroku accounts
+ 1430  heroku accounts:set sixth
+ 1431  vi Gemfile
+ 1432  rm Gemfile.lock 
+ 1433  bundle install
+ 1434  git commit -am "Configured for deployment to Heroku"
+ 1435  heroku create sixth --stack cedar
+ 1436  heroku info --app sixth
+ 1437  git push
+ 1438  git push heroku master
+ 1439  heroku run rake db:seet
+ 1440  heroku run rake db:seed
+ 1441  vi Gemfile
+ 1442  git commit -am "prettier Gemfile"
+ 1443  git push 
+ 1444  git push heroku
+ 1445  git push origin master
+ 1446  bundle install
+ 1447  ls -la
+ 1448  rm Gemfile.lock 
+ 1449  bundle install
+ 1450  ls -la
+ 1451  gem commit -am "another Gemfile"
+ 1452  git commit -am "another Gemfile"
+ 1453  git add .
+ 1454  git commit -m "another Gemfile"
+ 1455  git push
+ 1456  git push heroku master
+ 1457  history | grep heroku
+ 1458  heroku plugins:uninstall git://github.com/ddollar/heroku-accounts.git
+ 1459  heroku create --stack cedar
+ 1460  git remote rm heroku
+ 1461  git remote add heroku git@heroku.com:deep-journey-9227.git
+ 1462  git push
+ 1463  git push heroku master
+ 1464  heroku console
+ 1465  heroku run console
+ 1466  vi config/database.yml
+ 1467  git add .
+ 1468  git commit -m "correct heroku login info"
+ 1469  git push
+ 1470  git push heroku master
+ 1471  heroku open
+ 1472  heroku rake db:migrate
+ 1473  heroku run rake db:migrate
+ 1474  cd ../fourth
+ 1475  ls
+ 1476  cd ..
+ 1477  ls
+ 1478  cd fourth
+ 1479  vi Gemfile
+ 1480  clear
+ 1481  git branch
+ 1482  git add .
+ 1483  git commit -m "Getting back on track, fixing DB files"
+ 1484  git push master
+ 1485  cd ..
+ 1486  ls
+ 1487  history > his.txt
+ 1488  vi his.txt 
+ 1489  mv his.txt solutions.txt
+ 1490  cp solutions.txt ~/Desktop/.
+ 1491  cd fourth
+ 1492  rails s
+ 1493  vi Gemfile
+ 1494  git commit -am "Gemfile: added 'thin'"
+ 1495  vi config/database.yml
+ 1496  git commit -am "redo config/database.yml"
+ 1497  git push
+ 1498  git push --help
+ 1499  git push --all
+ 1500  git pull
+ 1501  git rm Gemfile.orig
+ 1502  git pull
+ 1503  git mergetool
+ 1504  git add .
+ 1505  git commit -m "try db config again"
+ 1506  git push
+ 1507  git add .
+ 1508  git commit -m "re-added users into config/routes"
+ 1509  git push
+ 1510  git push heroku
+ 1511  heroku create seventh --stack cedar
+ 1512  git push heroku master
+ 1513  git remote rm heroku
+ 1514  git remote add heroku git@heroku.com:seventh.git
+ 1515  git push heroku master
+ 1516  bundle install
+ 1517  ls
+ 1518  rm Gemfile.lock 
+ 1519  bundle install
+ 1520  git add .
+ 1521  git commit -m "reset Gemfile.lock"
+ 1522  git push
+ 1523  git push master
+ 1524  branch master
+ 1525  git branch
+ 1526  git checkout master
+ 1527  git push master
+ 1528  git push 
+ 1529  git push heroku 
+ 1530  heroku info --app seventh
+ 1531  heroku open
+ 1532  heroku run console
+ 1533  vi config/database.yml
+ 1534  commit -am "one last config/database"
+ 1535  git commit -am "one last config/database"
+ 1536  git push
+ 1537  git push heroku 
+ 1538  heroku run rake db:migrate
+ 1539  heroku open
+ 1540  heroku run console
+ 1541  heroku db:pull
+ 1542  heroku run console
+ 1543  heroku db:pull
+ 1544  cd public/
+ 1545  ls
+ 1546  vi index.html
+ 1547  git add .
+ 1548  git commit -m "added index.html"
+ 1549  git push
+ 1550  git push heroku
+ 1551  heroku db:pull
+ 1552  cd ..
+ 1553  vi Gemfile
+ 1554  ls -a
+ 1555  rm Gemfile.lock 
+ 1556  ls
+ 1557  bundle install
+ 1558  git add .
+ 1559  git commit -m "Gemfile: production --> assets"
+ 1560  git push
+ 1561  git push heroku
+ 1562  heroku run db:migrate
+ 1563  heroku db:push
+ 1564  heroku open
+ 1565  git push origin master
+ 1566  git -h
+ 1567  clear
+ 1568  vi Gemfile
+ 1569  gem install thin
+ 1570  cd ../sixth/
+ 1571  ls
+ 1572  cd app/
+ 1573  ls
+ 1574  cd ..
+ 1575  cd ../fourth/app/
+ 1576  cd helpers/
+ 1577  ls
+ 1578  vi users_helper.rb
+ 1579  vi users_helper.rb.old 
+ 1580  cat application_helper.rb 
+ 1581  cat pages_helper.rb 
+ 1582  cat users_helper.rb
+ 1583  cd ..
+ 1584  ls
+ 1585  cd models/
+ 1586  ls
+ 1587  cat user.rb
+ 1588  cd ..
+ 1589  ls
+ 1590  cd ..
+ 1591  ls
+ 1592  cd config/
+ 1593  ls
+ 1594  vi routes.rb
+ 1595  vi application.rb 
+ 1596  vi boot.rb 
+ 1597  vi database.yml
+ 1598  cd ../..
+ 1599  cd sixth/
+ 1600  cd config/
+ 1601  ls
+ 1602  vi application.rb 
+ 1603  vi boot.rb 
+ 1604  vi database.yml
+ 1605  cd ..
+ 1606  git add .
+ 1607  git commit -m "config/database fix"
+ 1608  git push
+ 1609  git push heroku
+ 1610  heroku run console
+ 1611  vi app/controllers/users_controller.rb 
+ 1612  ls app/views/
+ 1613  ls app/views/users/
+ 1614  vi app/controllers/users_controller.rb 
+ 1615  git add .
+ 1616  git commit -m "learning about the app/controllers/users_controller.rb"
+ 1617  git push
+ 1618  git push heroku
+ 1619  heroku open
+ 1620  vi app/controllers/users_controller.rb 
+ 1621  git add .
+ 1622  git commit -m "with users_controller.rb - added destroy code v01"
+ 1623  git push
+ 1624  git push heroku
+ 1625  vi app/controllers/users_controller.rb 
+ 1626  git add .
+ 1627  git commit -m "user_controller.rb - really getting it now"
+ 1628  git push
+ 1629  git push heroku
+ 1630  vi app/controllers/users_controller.rb 
+ 1631  git add .
+ 1632  git commit -m "user_controller.rb - more to learn"
+ 1633  git push
+ 1634  git push heroku
+ 1635  vi app/controllers/users_controller.rb 
+ 1636  git add .
+ 1637  git commit -m "user_controller.rb - still more"
+ 1638  git push
+ 1639  git push heroku
+ 1640  vi app/controllers/users_controller.rb 
+ 1641  git add .
+ 1642  git commit -m "user_controller.rb - learning about 'update' "
+ 1643  git push
+ 1644  git push heroku
+ 1645  git add .
+ 1646  git commit -m "user_controller.rb - learning 02 - 'update' "
+ 1647  git push
+ 1648  git add .
+ 1649  git commit -m "user_controller.rb - learning 03 - 'update' "
+ 1650  git push
+ 1651  git push heroku
+ 1652  cd ../
+ 1653  ls
+ 1654  cd fourth
+ 1655  ls
+ 1656  rm Gemfile.lock 
+ 1657  bundle install
+ 1658  git add .
+ 1659  git commit -m "user_controller.rb - so, Heroku wants everything clearly defined, or nothing will work! "
+ 1660  git push
+ 1661  git push heroku
+ 1662  heroku open
+ 1663  cd public/
+ 1664  ls
+ 1665  git mv index.html index.html.old
+ 1666  cd ..
+ 1667  git commit -am "maybe the index.html file is a problem?"
+ 1668  git push
+ 1669  git push heroku
+ 1670  heroku run db:pull
+ 1671  heroku db:pull
+ 1672  heroku open
+ 1673  man grep
+ 1674  grep -lir "testing" *
+ 1675  vi public/index.html.old 
+ 1676  git commit -am "Heroku fail: 010 - index?"
+ 1677  git push
+ 1678  git push heroku
+ 1679  git commit -am "Heroku fail: 011 - config/routes?"
+ 1680  git push
+ 1681  git push heroku
+ 1682  heroku open
+ 1683  git commit -am "Heroku fail: 012 - config/routes again?"
+ 1684  git push
+ 1685  git push heroku
+ 1686  heroku open
+ 1687  cd ..
+ 1688  history | grep new
+ 1689  rails new eighth -d postgresql
+ 1690  cd eighth/
+ 1691  ls
+ 1692  cp ../sixth/README.markdown .
+ 1693  ls
+ 1694  rm README
+ 1695  vi README.markdown 
+ 1696  cd public/
+ 1697  ls
+ 1698  mv index.html index.html.old
+ 1699  vi index.html.old 
+ 1700  mv index.html.old index.html
+ 1701  cd ..
+ 1702  git init
+ 1703  git add .
+ 1704  git commit -m "Initial commit"
+ 1705  git push -u origin master
+ 1706  heroku create
+ 1707  heroku create eighth --stack cedar
+ 1708  git remote rm heroku
+ 1709  git remote add heroku git@heroku.com:eighth.git
+ 1710  git push heroku master
+ 1711  heroku open
+ 1712  git mv public/index.html public/index.html.old
+ 1713  rails generate scaffold Micropost content:string user_id:integer
+ 1714  bundle exec rake db:migrate
+ 1715  history > his.txt
+ 1716  cd ..
+ 1717  ls
+ 1718  vi solutions.txt 
+ 1719  cd eighth 
+ 1720  rails generate scaffold User name:string email:string
+ 1721  git reset --hard
+ 1722  ls app/views/
+ 1723  ls app/views/users/
+ 1724  git revert
+ 1725  git branch
+ 1726  git log
+ 1727  git checkout -f
+ 1728  ls app/views/
+ 1729  cd ..
+ 1730  rm -rf eighth
+ 1731  history
+ 1732  rails new eighth -d postgresql
+ 1733  cd eighth/
+ 1734  git init
+ 1735  git add .
+ 1736  git commit "Another Initial Commit"
+ 1737  git commit -m "Another Initial Commit"
+ 1738  git push
+ 1739  git push origin master
+ 1740  git pull
+ 1741  history | grep eighth
+ 1742  history | grep git
+ 1743  history | grep git@
+ 1744  git remote add origin git@github.com:richgr/eighth.git
+ 1745  git pull
+ 1746  git branch
+ 1747  git branch -b newish
+ 1748  git checkout -b newish
+ 1749  git pull
+ 1750  history | grep pull
+ 1751  git pull git@github.com:richgr/eighth.git
+ 1752  ls public/
+ 1753  git mv public/index.html public/index.html.old
+ 1754  ls public/
+ 1755  gitpublic/index.html public/index.html.old
+ 1756  mv public/index.html public/index.html.old
+ 1757  cd config/initializers/
+ 1758  ls
+ 1759  vi secret_token.rb 
+ 1760  ls
+ 1761  cp secret_token.rb secret_token.rb.unmerged
+ 1762  vi secret_token.rb 
+ 1763  cd ../..
+ 1764  git pull git@github.com:richgr/eighth.git
+ 1765  git rm config/initializers/secret_token.rb
+ 1766  git rm public/index.html.old
+ 1767  git rm public/index.html
+ 1768  rm public/index.html.old 
+ 1769  git pull git@github.com:richgr/eighth.git
+ 1770  git add .
+ 1771  git commit 'trying to pull'
+ 1772  git commit -m'trying to pull'
+ 1773  git pull git@github.com:richgr/eighth.git
+ 1774  git checkout master
+ 1775  git merge newish 
+ 1776  git push
+ 1777  vi Gemfile
+ 1778  gem install rspec-rails
+ 1779  vi Gemfile
+ 1780  bundle install
+ 1781  cd public/
+ 1782  ls
+ 1783  vi index.html
+ 1784  cd ..
+ 1785  git checkout -b temp
+ 1786  git add .
+ 1787  git commit -m "temporary - added index.html back"
+ 1788  git push
+ 1789  git branch
+ 1790  git branch -d newish 
+ 1791  git status
+ 1792  git checkout master
+ 1793  git merge temp 
+ 1794  git push
+ 1795  git branch -d temp 
+ 1796  git checkout -b temp2
+ 1797  rails generate rspec:install
+ 1798  git commit -am "added rspec"
+ 1799  git add .
+ 1800  git commit -m "added rspec"
+ 1801  git push temp2
+ 1802  git push origin temp2
+ 1803  ls
+ 1804  vi README.markdown 
+ 1805  git rm README
+ 1806  history | grep heroku
+ 1807  git remote rm heroku
+ 1808  gem instal heroku
+ 1809  vi Gemfile
+ 1810  heroku remote add heroku git@heroku.com:eighth.git
+ 1811  git remote add heroku git@heroku.com:eighth.git
+ 1812  git push heroku master
+ 1813  rails generate controller Pages home contact
+ 1814  cat config/routes.rb 
+ 1815  ls
+ 1816  cp ../fourth/app/views/pages/about.html.erb app/views/pages/.
+ 1817  cp ../fourth/app/views/pages/help.html.erb app/views/pages/.
+ 1818  vi app/views/pages/home.html.erb 
+ 1819  vi app/views/pages/contact.html.erb 
+ 1820  vi config/routes.rb 
+ 1821  vi app/controllers/pages_controller.rb 
+ 1822  git add .
+ 1823  git commit -m "Added pages controller"
+ 1824  git push origin temp2
+ 1825  git mv public/index.html public/index.html.old
+ 1826  git add .
+ 1827  git commit -m "removed index.html"
+ 1828  git push origin temp2
+ 1829  git rm -r spec/views
+ 1830  git rm -r spec/helpers
+ 1831  vi spec/controllers/pages_controller_spec.rb 
+ 1832  bundle exec rspec spec/
+ 1833  vi config/routes.rb 
+ 1834  time bundle exec rspec spec/
+ 1835  vi config/database.yml 
+ 1836  bundle exec db:migrate
+ 1837  bundle install
+ 1838  bundle exec db:migrate
+ 1839  history
+ 1840  git status
+ 1841  git add .
+ 1842  git commit -m "routes and database fixed (?)"
+ 1843  git push origin temp2
+ 1844  cd config/
+ 1845  ls
+ 1846  cd ..
+ 1847  ls
+ 1848  cd config/initializers/
+ 1849  ls
+ 1850  git mv secret_token.rb.unmerged secret_token.rb
+ 1851  vi secret_token.rb 
+ 1852  cd ../..
+ 1853  ls
+ 1854  git add .
+ 1855  git commit -m "fixed the secret_token.rb"
+ 1856  git push origin temp2 
+ 1857  vi app/views/layouts/application.html.erb 
+ 1858  cp ../fourth/app/views/layouts/_*.html.erb app/views/layouts/.
+ 1859  ls app/views/layouts
+ 1860  vi app/views/layouts/_stylesheets.html.erb 
+ 1861  vi app/views/layouts/application.html.erb 
+ 1862  git add .
+ 1863  git commit -m "added pages layouts"
+ 1864  git push origin temp2 
+ 1865  ls app/views/pages/
+ 1866  ls app/helpers/
+ 1867  vi app/helpers/application_helper.rb 
+ 1868  vi app/helpers/pages_helper.rb 
+ 1869  git add .
+ 1870  git commit -m "added pages (application) helper"
+ 1871  git push origin temp2 
+ 1872  ls app/controllers/
+ 1873  vi app/controllers/application_controller.rb 
+ 1874  vi app/controllers/pages_controller.rb 
+ 1875  git add .
+ 1876  git commit -m "added pages controller code"
+ 1877  git push origin temp2 
+ 1878  vi config/routes.rb 
+ 1879  cd public/ls
+ 1880  cd public/
+ 1881  ls
+ 1882  cd ..
+ 1883  ls
+ 1884  cp ../fourth/public/assets public/.
+ 1885  cp -r ../fourth/public/assets public/.
+ 1886  cd public/
+ 1887  ls
+ 1888  cd assets/
+ 1889  ls
+ 1890  cd stylesheets/
+ 1891  ls
+ 1892  cd ../../..
+ 1893  ls
+ 1894  clear
+ 1895  git add .
+ 1896  history
+ 1897  git add .
+ 1898  git commit -m "fixed config/routes and copied the stylesheets back into public/assets"
+ 1899  git push origin temp2 
+ 1900  git checkout master
+ 1901  history | grep merge
+ 1902  git merge temp2
+ 1903  git push origin master
+ 1904  git push heroku
+ 1905  heroku open
+ 1906  vi config/routes.rb 
+ 1907  vi Gemfile
+ 1908  bundle install
+ 1909  vi Gemfile.lock 
+ 1910  bundle install
+ 1911  vi config/routes.rb 
+ 1912  git branch
+ 1913  git branch -d temp2 
+ 1914  git branch -b temp3
+ 1915  history | grep branch
+ 1916  git branch -b temp3
+ 1917  git checkout temp3
+ 1918  history | grep checkout
+ 1919  git checkout -b temp3
+ 1920  vi app/controllers/pages_controller.rb 
+ 1921  vi app/controllers/application_controller.rb 
+ 1922  cd app/models/
+ 1923  ls
+ 1924  cd ../helpers/
+ 1925  ls
+ 1926  vi application_helper.rb 
+ 1927  vi pages_helper.rb 
+ 1928  cd ../views/
+ 1929  ls
+ 1930  cd layouts/
+ 1931  ls
+ 1932  vi application.html.erb 
+ 1933  cp application.html.erb application.html.erb.fourth
+ 1934  vi application.html.erb
+ 1935  cd .../pa
+ 1936  cd ..
+ 1937  ls
+ 1938  cd pages/
+ 1939  ls
+ 1940  vi home.html.erb 
+ 1941  vi contact.html.erb 
+ 1942  vi about.html.erb 
+ 1943  vi help.html.erb 
+ 1944  vi home.html.erb 
+ 1945  cp home.html.erb home.html.erb.fourth
+ 1946  vi home.html.erb 
+ 1947  cd ../../..
+ 1948  git add .
+ 1949  git commit -m "Heroku fail 040: trying to undo pages complexity"
+ 1950  git checkout master
+ 1951  git merge temp3 
+ 1952  git push origin master
+ 1953  git push heroku master
+ 1954  heroku open
+ 1955  cd app/controllers/
+ 1956  ls
+ 1957  vi application_controller.rb 
+ 1958  vi pages_controller.rb 
+ 1959  cd ../helpers/
+ 1960  ls
+ 1961  vi application_helper.rb 
+ 1962  vi pages_helper.rb 
+ 1963  cd ../views/
+ 1964  ls
+ 1965  cd layouts/
+ 1966  ls
+ 1967  vi application.html.erb
+ 1968  mv application.html.erb application.html.erb.heroku_good
+ 1969  mv application.html.erb.fourth application.html.erb
+ 1970  vi application.html.erb
+ 1971  cd ../../..
+ 1972  git add .
+ 1973  git commit -m "Heroku test 041: is application layout to blame?"
+ 1974  git push origin temp3 
+ 1975  git push heroku temp3
+ 1976  git checkout master
+ 1977  git branch
+ 1978  git merge temp3 
+ 1979  git branch -d temp3 
+ 1980  git push master
+ 1981  git push origin master
+ 1982  git push heroku master
+ 1983  history
+ 1984  cd app/views/layouts/
+ 1985  ls
+ 1986  mv application.html.erb application.html.erb.fourth
+ 1987  mv application.html.erb.heroku_good application.html.erb
+ 1988  cd ../../..
+ 1989  git add .
+ 1990  git commit -m "Heroku fail 042: wish I knew how to rollback easily and have it workgit add .git add ."
+ 1991  git branch
+ 1992  git push origin master
+ 1993  git push heroku
+ 1994  heroku open
+ 1995  git add .
+ 1996  git commit -m "Heroku fail 043: adding 'render stylesheets' back into application helper"
+ 1997  git push
+ 1998  git push heroku
+ 1999  heroku open
+ 2000  exit
+ 2001  history
+ 2002  cd /var/www/
+ 2003  ls
+ 2004  history > his_working.txt

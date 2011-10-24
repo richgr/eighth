@@ -1,0 +1,85 @@
+ 1116  rake db:migrate
+ 1117  annotate
+ 
+ 1131  time bin/rspec spec/
+
+ 1163  rails s
+
+ 1164  sudo /etc/init.d/postgresql restart
+ 1165  clear
+
+ 1166  rails console --sandbox
+ 1167  rails console
+
+ 1193  bundle exec rake db:reset
+
+ 1221  git add .
+ 1222  git commit -m "Added password and encrypted_password to the User attributes"
+ 
+ 1225  rails g migration add_salt_to_users > salt:string
+ 1226  rake db:migrate
+ 1227  rake db:test:prepare
+
+ 1236  rails generate migration add_salt_to_users > salt:string
+
+ 1286  git commit -m "Added a sidebar and some styling"
+ 1287  git checkout master
+ 1288  git merge modeling-users 
+ 1289  git push
+ 1290  git push heroku
+ 1294  heroku rake db:migrate
+ 1293  heroku logs
+ 1295  heroku open
+
+ 1311  git remote rm heroku
+ 1312  git remote add heroku git@heroku.com:simple-samurai-3649.git
+ 1313  git push heroku master
+ 1316  heroku rake db:migrate
+ 1319  heroku open
+
+ 1517  git push try2 master
+
+ 1650  git remote rm heroku
+ 1652  git remote add heroku git@heroku.com:warm-fog-4239.git
+ 1653  heroku rake db:migrate
+ 1654  git push
+ 1656  git push heroku master
+ 1657  heroku rake db:migrate
+ 1658  heroku console
+
+
+ 2071  bundle install
+ 2059  git commit -am "Configured for deployment to Heroku"
+ 2060  heroku create sixth --stack cedar
+ 2061  heroku info --app sixth
+ 2062  git push
+ 2063  git push heroku master
+ 2065  heroku run rake db:migrate
+
+ 2091  vi config/database.yml
+ 
+ # Get the production database login info
+ heroku run console # if using cedar
+ > ENV['DATABASE_URL']
+ 
+ You'll get something like this:
+ postgres://omwalyyjzy:doOkmaowhxGgYzKgdmVS@ec2-107-22-249-125.compute-1.amazonaws.com/omwalyyjzy
+ or:
+ postgres://omwalyyjzy:doOkmaowhxGgYzKgdmVS@ec2-107-22-249-125.compute-1.amazonaws.com/omwalyyjzy
+ 
+ Do this with it:
+ "postgres://username:password@hostname/database"
+ 
+ 
+ production: 
+  encoding: unicode
+  adapter: postgresql
+  username: username
+  port: 5432
+  host: hostname
+  database: database
+  password: password
+  
+  
+ 
+ 
