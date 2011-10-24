@@ -2,10 +2,10 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->  
     <!-- blueprint stylesheets -->
-    <%= stylesheet_link_tag 'custom', :media => 'screen' %>
-    <%= stylesheet_link_tag 'custom', :media => 'print' %>
+    <%= stylesheet_link_tag 'screen', :media => 'screen' %>
+    <%= stylesheet_link_tag 'print', :media => 'print' %>
     <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
     <!-- custom stylesheets -->
-    <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+    <%= stylesheet_link_tag 'custom2', :media => 'screen' %>
     <!-- rails generated stylesheets -->
-    <%= stylesheet_link_tag 'custom', :media => 'scaffold' %>
+    <%= stylesheet_link_tag 'scaffold2', :media => 'screen' %>

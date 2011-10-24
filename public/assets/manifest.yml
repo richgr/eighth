@@ -20,3 +20,4 @@ blueprint/plugins/link-icons/readme.txt: blueprint/plugins/link-icons/readme-c05
 blueprint/plugins/rtl/readme.txt: blueprint/plugins/rtl/readme-31ae4365e62f271c051768772ef80983.txt
 blueprint/src/grid.png: blueprint/src/grid-a3e8e6a6df57000ec00b24e8ec862608.png
 old/application.css: old/application-1c9609bc58b1e77c196de29021583379.css
+scaffold.css.orig: scaffold.css-1b2b1673aac43e15dc08315360fe839f.orig
