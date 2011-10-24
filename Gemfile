@@ -42,6 +42,7 @@ end
 
 group :development do
   gem 'rspec-rails'
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 end
 
 group :production do
