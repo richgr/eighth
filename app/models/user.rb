@@ -13,7 +13,7 @@
 
 class User < ActiveRecord::Base
 
-  attr_accessor :password
+  attr_accessor :password  # creates a fake db_column (forms,defs)
   
   attr_accessible :name, :email, :password, :password_confirmation
 
@@ -49,7 +49,8 @@ class User < ActiveRecord::Base
   private
   
     def encrypt_password
-      self.salt = make_salt unless has_password?(password)
+      self.salt = make_salt if new_record?
+      # unless has_password?(password)
       self.encrypted_password = encrypt(password)
     end
     

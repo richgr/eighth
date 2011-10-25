@@ -13,6 +13,9 @@ describe UsersController do
       get :new
       response.should have_selector("title", :content => "Sign up")
     end
+    
+    
+    
        
   end
 
@@ -48,11 +51,11 @@ describe UsersController do
       response.should have_selector('h1>img', :class => "gravatar")
     end
     
-#    it "should have the right URL" do
-#      get :show, :id => @user
-#      response.should have_selector('div>a',  :href => user_path(@user))
-#                                              :content => user_path(@user) )
-#    end
+    it "should have the right URL" do
+      get :show, :id => @user
+      response.should have_selector('div>a',  :href => user_path(@user),
+                                              :content => user_path(@user) )
+    end
     
   end  # end factories
 
