@@ -7,6 +7,7 @@ gem 'rails', '3.1.1'
 
 gem 'pg'
 gem 'heroku'
+gem 'gravatar_image_tag'
 
 
 # Gems used only for assets and not required
