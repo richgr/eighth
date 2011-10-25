@@ -155,8 +155,15 @@ img.gravatar {
   margin-bottom: -15px;
 }
 
-/* Sign up page */
-div.field, div.actions {
+/* Sign up page, etc. */
+div.field {
   margin-bottom: 10px;
-
 }
+div.actions {
+  margin-bottom: 10px;
+}
+.g_pad {
+  padding: 100px;
+}
+
+
