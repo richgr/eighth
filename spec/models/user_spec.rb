@@ -92,17 +92,17 @@ describe User do
     user_with_duplicate_email.should_not be_valid
   end
 
-#  describe "passwords" do
-#    before(:each) do
-#      @user = User.new(@attr)
-#    end
-#    it "should have a password attribute" do
-#      @user.should respond_to(:password)
-#    end
-#    it "should have a password confirmation attribute" do
-#      @user.should respond_to(:password_confirmation)
-#    end
-#  end
+  describe "passwords" do
+    before(:each) do
+      @user = User.new(@attr)
+    end
+    it "should have a password attribute" do
+      @user.should respond_to(:password)
+    end
+    it "should have a password confirmation attribute" do
+      @user.should respond_to(:password_confirmation)
+    end
+  end
 
   describe "password validations" do
     it "should require a password" do
@@ -146,11 +146,11 @@ describe User do
     
 
   
-#    it "should have a salt" do
-#      @user.should respond_to(:salt)
-#    end
-#
-#
+    it "should have a salt" do
+      @user.should respond_to(:salt)
+    end
+
+
     describe "has_password? method" do
 
       it "should exist" do
@@ -165,7 +165,7 @@ describe User do
         @user.has_password?("invalid")
       end
     end
-#
+
 #    describe "authenticate method" do
 #
 #      it "should exist" do
@@ -185,7 +185,7 @@ describe User do
 #      end
 #
 #    end
-#
+
   end
 #
 #  # original file contents
