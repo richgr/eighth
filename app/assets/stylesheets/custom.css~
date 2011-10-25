@@ -156,9 +156,7 @@ img.gravatar {
 }
 
 /* Sign up page */
-div.field {
+div.field, div.actions {
   margin-bottom: 10px;
-}
-div.actions {
-  margin-bottom: 10px;
+
 }
