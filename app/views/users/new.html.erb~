@@ -30,6 +30,10 @@
 
 
 
-<br /><br />
+<br />
+
+<p>Already have a login?  
+<%= link_to "Sign in now!", signin_path %>
+</p>
 
 <%= link_to 'Back', users_path %>
