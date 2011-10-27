@@ -45,6 +45,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
+      sign_in @user
       redirect_to @user, :flash => { :success => "Welcome to the Sample App!" }
     else
       flash.now[:error] = "Sorry, please try again."
