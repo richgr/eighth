@@ -39,11 +39,15 @@ class User < ActiveRecord::Base
   
   class << self
     def authenticate(email, submitted_password)
+      email == "first@first.com" ? puts email
       user = find_by_email(email)
-      return nil    if use.nil?
-      return user   if user.has_password?(submitted_password)
-      # else return nil because something else 
-      ### (email not found, password not a match, ...)
+      (user && user.has_password?(submitted_password)) ? user : nil
+      return nil    if user.nil?
+    end
+    
+    def authenticate_with_salt(id, cookie_salt)
+      user = find_by_id(id)
+      (user && user.salt == cookie_salt) ? user : nil
     end
   end
   
