@@ -9,6 +9,8 @@ gem 'pg'
 gem 'heroku'
 gem 'gravatar_image_tag'
 
+# Don't mind this line
+
 # Gems used only for assets and not required
 # in production environments by default.
 # Before deploying to production, assets need to be precompiled using 

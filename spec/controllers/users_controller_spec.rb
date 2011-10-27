@@ -115,6 +115,79 @@ describe UsersController do
     end
     
   end  # end factories
+  
+  
+  describe "Get 'edit'" do
+  
+    before(:each) do
+      @user = Factory(:user)
+      test_sign_in(@user)
+    end
+    
+    it "should be successful" do
+      get :edit, :id => @user
+      response.should be_success
+    end
+    
+    it "should have the right title" do
+      get :edit, :id => @user
+      response.should have_selector('title', :content => "Edit user")
+    end
+    
+    it "should have a link to change the gravatar" do
+      get :edit, :id => @user
+      response.should have_selector('a',  :href => 'http://gravatar.com/emails',
+                                          :content => 'Change')
+    end
+    
+  end
+  
+  describe "PUT 'update" do 
+    
+    before(:each) do
+      @user = Factory(:user)
+      test_sign_in(@user)
+    end
+
+    describe "failure" do
+      @attr = { :name => "", :email => "", 
+                :password => "",
+                :password_confirmation => "" }
+
+      it "should render the 'edit' page" do
+        put :update, :id => @user, :user => @attr         #attr = attributes
+        response.should render_template('edit')
+      end
+      
+      it "should have the right title" do
+        put :update, :id => @user, :user => @attr         #attr = attributes
+        response.should have_selector('title', :content => 'Edit user')
+      end
+      
+    end
+    
+    describe "success" do
+      
+      before(:each) do
+        @attr = { :name => "New Name",
+                  :email => "newuser@example.com",
+                  :password => "barbaz",
+                  :password_confirmation => "barbaz" }
+      end
+      
+      it "should change the user's attributes" do
+        put :update, :id => @user, :user => @attr     # @user from Factory
+        user = assigns(:user)
+        @user.reload
+        @user.name.should == user.name
+        @user.email.should == user.email
+        @user.encrypted_password.should == user.encrypted_password
+      end
+      
+    end
+    
+
+  end
 
 end
 

@@ -4,11 +4,6 @@ class UsersController < ApplicationController
   def index
     @users = User.all
     @title = "All Users"
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @users }
-    end
   end
 
   # GET /users/1
@@ -16,11 +11,6 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @title = "Show " + @user.name
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @user }
-    end
   end
 
   # GET /users/new
@@ -28,20 +18,9 @@ class UsersController < ApplicationController
   def new
     @user = User.new
     @title = "Sign up"
-    
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @user }
-    end
   end
 
-  # GET /users/1/edit
-  def edit
-    @user = User.find(params[:id])
-    @title = "Edit " + @user.name
-  end
-
-
+  # CREATE a new user and redirect to the user's page
   def create
     @user = User.new(params[:user])
     if @user.save
@@ -52,6 +31,12 @@ class UsersController < ApplicationController
       @title = "Sign up"
       render 'new'
     end
+  end
+
+  # GET /users/1/edit
+  def edit
+    @user = User.find(params[:id])
+    @title = "Edit user: " + @user.name
   end
 
 #  # POST /users
@@ -77,16 +62,24 @@ class UsersController < ApplicationController
   # PUT /users/1.json
   def update
     @user = User.find(params[:id])
-
-    respond_to do |format|
-      if @user.update_attributes(params[:user])
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
-        format.json { head :ok }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
+    if @user.update_attributes(params[:user])
+      @title = "Show user: " + @user.name
+      render 'show'
+    else
+      @title = "Edit user: " + @user.name
+      render 'edit'
     end
+#    @user = User.find(params[:id])
+
+#    respond_to do |format|
+#      if @user.update_attributes(params[:user])
+#        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+#        format.json { head :ok }
+#      else
+#        format.html { render action: "edit" }
+#        format.json { render json: @user.errors, status: :unprocessable_entity }
+#      end
+#    end
   end
 
   # DELETE /users/1
