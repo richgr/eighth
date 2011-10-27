@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+
+  before_filter :authenticate_before, :only => [:edit, :update]
+
   # GET /users
   # GET /users.json
   def index
@@ -65,7 +68,7 @@ class UsersController < ApplicationController
     if @user.update_attributes(params[:user])
       @title = "Show user: " + @user.name
       # render 'show'
-      redirect_to @user, :flash => { :success => "Profile updated" }
+      redirect_to @user, :flash => { :success => "Profile updated." }
     else
       @title = "Edit user: " + @user.name
       render 'edit'
@@ -110,6 +113,11 @@ class UsersController < ApplicationController
     end
   end  
   
+  private
   
-  
+    # deny_access moved to app_helper
+    def authenticate_before 
+      deny_access unless signed_in?
+    end
+      
 end

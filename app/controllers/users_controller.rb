@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+
+  before_filter :authenticate_before, :only => [:edit, :update]
+
   # GET /users
   # GET /users.json
   def index
@@ -110,6 +113,11 @@ class UsersController < ApplicationController
     end
   end  
   
+  private
   
-  
+    # deny_access moved to sessions_helper
+    def authenticate_before 
+      deny_access unless signed_in?
+    end
+      
 end
