@@ -184,6 +184,12 @@ describe UsersController do
         @user.encrypted_password.should == user.encrypted_password
       end
       
+      it "should have a flash message" do
+        put :update, :id => @user, :user => @attr     # @user from Factory
+        flash[:success].should =~ /Profile updated/i
+      end
+      
+      
     end
     
 

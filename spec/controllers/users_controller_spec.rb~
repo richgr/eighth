@@ -172,7 +172,7 @@ describe UsersController do
         @attr = { :name => "New Name",
                   :email => "newuser@example.com",
                   :password => "barbaz",
-                  :password_confirmation => "barbaz"
+                  :password_confirmation => "barbaz" }
       end
       
       it "should change the user's attributes" do
@@ -183,6 +183,14 @@ describe UsersController do
         @user.email.should == user.email
         @user.encrypted_password.should == user.encrypted_password
       end
+      
+      it "should have a flash message" do
+        put :update, :id => @user, :user => @attr     # @user from Factory
+        flash[:success].should =~ /Profile updated/i
+        response.should have_selector("div.flash.success",
+                                      :content => 'Profile updated')
+      end
+      
       
     end
     

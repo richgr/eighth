@@ -64,7 +64,8 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
       @title = "Show user: " + @user.name
-      redirect_to @user     # same as -- render 'show'
+      # render 'show'
+      redirect_to @user, :flash => { :success => "Profile updated." }
     else
       @title = "Edit user: " + @user.name
       render 'edit'
