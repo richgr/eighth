@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 
-  before_filter :authenticate_before, :only => [:edit, :update]
+  before_filter :authenticate, :only => [:edit, :update]
+  before_filter :correct_user, :only => [:edit, :update]
 
   # GET /users
   # GET /users.json
@@ -116,8 +117,13 @@ class UsersController < ApplicationController
   private
   
     # deny_access moved to sessions_helper
-    def authenticate_before 
+    def authenticate 
       deny_access unless signed_in?
     end
+    
+    def correct_user
+      @user = User.find(params[:id])
+      redirect_to(root_path) unless current_user?(@user)
+    end 
       
 end
