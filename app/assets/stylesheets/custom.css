@@ -80,7 +80,12 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-
+users ul {
+  padding: 1em;
+}
+users ul li {
+  padding: 1em;  
+}
 /* Sign up button */
 
 a.signup_button {
@@ -147,12 +152,21 @@ footer nav {
   padding: 20px;
   margin: 0;
   background: #ffffcc;
-}   
+}  
+
+ 
 
 /* Gravatar! */
 img.gravatar {
   border: 1px solid #999999;
   margin-bottom: -15px;
+}
+
+img.gravatar_norm {
+  border: 1px solid #999999;
+  margin: 15px 2px -8px 2px;
+  padding: 0px;
+  background: #999999;
 }
 
 /* Sign up page, etc. */
@@ -200,6 +214,16 @@ padding: 5px;
 #error_explanation ul li {
 font-size: 12px;
 list-style: square;
+}
+
+
+/* For Users List */
+ul.users {
+  margin-top: 1em;
+}
+
+ul.users li {
+  list_style: none;
 }
 
 

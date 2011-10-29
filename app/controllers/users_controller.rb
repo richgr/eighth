@@ -1,13 +1,13 @@
 class UsersController < ApplicationController
 
-  before_filter :authenticate, :only => [:edit, :update]
+  before_filter :authenticate, :only => [:index, :edit, :update]
   before_filter :correct_user, :only => [:edit, :update]
 
   # GET /users
   # GET /users.json
   def index
     @users = User.all
-    @title = "All Users"
+    @title = "All users"
   end
 
   # GET /users/1
