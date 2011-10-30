@@ -226,4 +226,10 @@ ul.users li {
   list_style: none;
 }
 
+/* For Admins */
 
+a.g_delete, a:link.g_delete, a:hover.g_delete, a:visited.g_delete {
+  margin-left: 20px;
+  color: #ff0000;
+  font-weight: normal;
+}
