@@ -1,25 +1,23 @@
 class UsersController < ApplicationController
 
-  before_filter :authenticate_user, :only => [:index, :edit, :update, :destroy]
+  before_filter :authenticate, :only => [:index, :edit, :update, :destroy]
   before_filter :correct_user, :only => [:edit, :update]
   before_filter :admin_user,   :only => :destroy
 
-  # GET /users
-  # GET /users.json
+
   def index
     @users = User.paginate(:page => params[:page])
     @title = "All users"
   end
 
-  # GET /users/1
-  # GET /users/1.json
   def show
     @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(:page => params[:page], 
+                                            :per_page => 8)    
     @title = "Show " + @user.name
   end
 
-  # GET /users/new
-  # GET /users/new.json 
+
   def new
     @user = User.new
     @title = "Sign up"
@@ -38,13 +36,12 @@ class UsersController < ApplicationController
     end
   end
 
-  # GET /users/1/edit
+
   def edit
     @title = "Edit user: " + @user.name
   end
 
-  # PUT /users/1
-  # PUT /users/1.json
+
   def update
     if @user.update_attributes(params[:user])
       @title = "Show user: " + @user.name
@@ -74,7 +71,7 @@ class UsersController < ApplicationController
   private
   
     # deny_access moved to sessions_helper
-    def authenticate_user
+    def authenticate
       deny_access unless signed_in?
     end
     

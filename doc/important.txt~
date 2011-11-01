@@ -5,7 +5,7 @@ All installation was conducted as per:
 2) Postgres - http://xtremekforever.blogspot.com/2011/05/setup-rails-project-with-postgresql-on.html
 
 
-3) To run the console, server or rake in different modes (dev, test, prod)
+To run the console, server or rake in different modes (dev, test, prod)
 Check out p.220
 
 rails c
@@ -25,21 +25,7 @@ rails console production
 rails server --environment production
 bundle exec rake db:migrate RAILS_ENV=production
 
-4) When getting ready for a new database installation, try these:
-bundle exec rake db:migrate
-bundle exec rake db:test:prepare
-bundle exec rake db:populate
-bundle exec rake db:populate RAILS_ENV=test
 
-
-5) Interested in a beep noise (after an RSpec call)?  Try this:
-
-clear; time bin/rspec spec/ ; beep -f 261.6 -l 2
-
-
-6) To precompile easily, try this:
-
-clear; rm -rf public/assets/*; bundle exec rake assets:precompile; beep
 
 
 By the way

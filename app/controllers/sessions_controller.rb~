@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+
+  include 
+
   def new
     @title = "Sign in"
   end

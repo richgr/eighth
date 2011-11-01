@@ -154,7 +154,8 @@ describe UsersController do
   describe "Get 'show'" do
   
     before(:each) do
-      @user = Factory(:user)
+      # @user = Factory(:user)
+      @user = test_sign_in(Factory(:user))
     end
     
     it "should be successful" do
@@ -184,9 +185,18 @@ describe UsersController do
     
     it "should have the right URL" do
       get :show, :id => @user
-      response.should have_selector('div>a',  :href => user_path(@user),
-                                              :content => user_path(@user) )
+      response.should have_selector('div>a',  :href => user_path(@user))
+      # , :content => user_path(@user) )    # new template
     end
+    
+    it "should show the user's microposts'" do
+      mp1 = Factory(:micropost, :user => @user, :content => "Football")
+      mp2 = Factory(:micropost, :user => @user, :content => "Soccer")
+      get :show, :id => @user
+      response.should have_selector("span.content", :content => mp1.content)
+      response.should have_selector("span.content", :content => mp2.content)
+    end
+
     
   end  # end factories
   

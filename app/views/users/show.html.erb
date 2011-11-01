@@ -1,29 +1,8 @@
 
 <div class="g_container" id="g_container">
   
-  <div class="g_left">
-    <p id="notice">
-      <%= notice %>
-    </p>
-    <h1>
-      <%= gravatar_for @user%>
-      <%= @user.name %>
-    </h1>
+  <%= render 'shared/display_microposts' %>
 
-    <p>
-      <br />
-      <%= link_to 'Edit', edit_user_path(@user) %> |
-      <%= link_to 'Back', users_path %>
-    </p>
-  </div>
-
-  <div class="g_right round" id="g_right round">
-    <strong>Name</strong> <%= @user.name %>
-    <br />
-    <strong>URL</strong> <%= link_to user_path(@user), @user %>
-    <br />
-  </div>
-
-
+  <%= render 'shared/user_info' %>
 
 </div>

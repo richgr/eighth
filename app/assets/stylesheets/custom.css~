@@ -1,5 +1,5 @@
 .container {
-  width: 710px;
+  width: 770px;
 }
 
 body {
@@ -117,7 +117,7 @@ a.signup_button {
 footer {
   text-align: center;
   margin-top: 10px;
-  width: 710px;
+  width: 770px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -153,6 +153,15 @@ footer nav {
   margin: 0;
   background: #ffffcc;
 }  
+
+.g_main {
+  display: inline-block;
+  width: 390px;
+  padding: 20px;
+  margin: 0;
+  height:auto !important; 
+  min-height:300px;
+}
 
  
 
@@ -231,5 +240,65 @@ ul.users li {
 a.g_delete, a:link.g_delete, a:hover.g_delete, a:visited.g_delete {
   margin-left: 20px;
   color: #ff0000;
-  font-weight: bold;
+  font-weight: normal;
 }
+
+/* For Micropost Display */
+
+div.g_data {
+  background: #EEEEEE;
+  border: none; 
+  padding: 3px;
+}
+
+h1.micropost {
+  margin-bottom: 0.3em;
+}
+
+div.micropost {
+  margin: 10px;
+  padding: 10px;
+  background: #EEEEEE;
+}
+
+div.micropost2 {
+  margin: 10px;
+  padding: 10px;
+  background: #FFFFFF;
+  border-top: #CCCCCC solid 1px;
+}
+
+span.content {
+  font-size: 100%;
+  font-style: none;
+  text-decoration: none;
+}
+
+span.timestamp {
+  font-size: 85%;
+  font-style: italic; 
+  margin-left: 100px;
+  color: #444444;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+form.new_micropost {
+  margin-bottom: 2em;
+}
+
+form.new_micropost textarea {
+  height: 4em;
+  margin-bottom: 0;
+}
+
