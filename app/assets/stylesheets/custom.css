@@ -159,8 +159,9 @@ footer nav {
   width: 390px;
   padding: 20px;
   margin: 0;
+  background: #EEEEEE;
   height:auto !important; 
-  min-height:100px;
+  max-height:100px;
 }
 
  

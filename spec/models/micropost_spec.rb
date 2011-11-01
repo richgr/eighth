@@ -58,7 +58,6 @@ describe Micropost do
     end
     
     it "should require nonblank content" do
-      pending
       @user.microposts.build(:content => "   ").should_not be_valid
     end
     

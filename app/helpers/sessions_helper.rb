@@ -31,6 +31,9 @@ module SessionsHelper
     current_user == user
   end
   
+  def authenticate
+    deny_access unless signed_in?
+  end
   
   def deny_access
     store_location

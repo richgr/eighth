@@ -160,7 +160,7 @@ footer nav {
   padding: 20px;
   margin: 0;
   height:auto !important; 
-  min-height:300px;
+  max-height:100px;
 }
 
  

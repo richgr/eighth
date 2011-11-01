@@ -1,12 +1,7 @@
-  <div class="g_left" comment="display microposts">
+  <div class="g_left" summary="display microposts">
     <p id="notice">
       <%= notice %>
     </p>
-    <h1>
-      <%= gravatar_for @user, :size => 30 %>
-      <%= @user.name %>
-    </h1>
-    <br />
     
     <% unless @user.microposts.empty? %>
       <%= will_paginate @microposts, :class => "css_here" %>

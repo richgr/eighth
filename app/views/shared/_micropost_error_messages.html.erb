@@ -1,0 +1,17 @@
+<% if @micropost.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@micropost.errors.count, "error") %>
+      prohibited this micropost from being saved.
+    </h2>
+    <p>
+      There were problems with the following fields
+    </p>
+    <ul>
+    <% @micropost.errors.full_messages.each do |message| %>
+      <li><%= message %>
+    <% end %>
+    </ul>
+  </div>
+
+<% end %>

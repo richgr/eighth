@@ -6,13 +6,11 @@ describe MicropostsController do
   describe "access control" do
     
     it "should deny access to 'create'" do
-      pending
       post :create
       response.should redirect_to(signin_path)
     end
     
     it "should deny access to 'destroy'" do
-      pending
       delete :destroy, :id => 1
       response.should redirect_to(signin_path)
     end
@@ -32,15 +30,13 @@ describe MicropostsController do
       end
       
       it "should not create a micropost" do
-        pending
         lambda do
           post :create, :micropost => @attr
         end.should_not change(Micropost, :count)
       end
       
       it "should render the home page" do
-        pending
-        post :creae, :micropost => @attr
+        post :create, :micropost => @attr
         response.should render_template('pages/home') 
       end
       
@@ -53,20 +49,17 @@ describe MicropostsController do
       end
       
       it "should create a micropost" do
-        pending
         lambda do
           post :create, :micropost => @attr
         end.should change(Micropost, :count).by(1)
       end
       
       it "should redirect to the home page" do
-        pending
         post :create, :micropost => @attr
-        response.should redirect_to(root_path) 
+        response.should redirect_to(user_path(@user)) 
       end
 
       it "should have a flash message" do
-        pending
         post :create, :micropost => @attr
         flash[:success].should =~ /micropost created/i
       end
