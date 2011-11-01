@@ -209,11 +209,6 @@ describe User do
       @user.should be_admin
     end
     
-    
-    
   end
-  
-#
-#  # original file contents
-#  # pending "add some examples to (or delete) #{__FILE__}"
+
 end

@@ -64,21 +64,18 @@ describe SessionsController do
   end
   
   describe "DELETE 'destroy post' " do
+  
+    before(:each) do
+      test_sign_in(Factory(:user))
+    end
     
-#    before(:each) do
-#      @user = Factory(:user)
-#      @attr = { :email => @user.email,
-#                :password => @user.password }
-#    end
     
     it "should sign out user (destroy session)" do
-      test_sign_in(Factory(:user))
       delete :destroy
       controller.should_not be_signed_in
     end
     
     it "should redirect to root when sign out user" do
-      test_sign_in(Factory(:user))
       delete :destroy
       response.should redirect_to(root_path)
     end

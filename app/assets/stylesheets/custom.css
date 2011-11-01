@@ -170,6 +170,7 @@ footer nav {
 img.gravatar {
   border: 1px solid #999999;
   margin-bottom: -15px;
+  vertical-align: top;
 }
 
 img.gravatar_norm {

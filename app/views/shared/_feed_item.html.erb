@@ -1,0 +1,29 @@
+<div class="" style="border-top: thin solid #999999; margin: 15px;">
+
+  <div class="" style="vertical-align:text-top;">
+    <%= link_to gravatar_for(feed_item.user, 
+                              :size => 40, 
+                              :style => "vertical-align:text-top;"),
+                                      feed_item.user %>
+    <%#= link_to feed_item.user.name, feed_item.user %>
+    <div class="" style="width:75%; display:inline-block;">
+      <span class="content">
+      <%= feed_item.content %>
+      </span>
+      <br />
+      <span class="timestamp" style="margin-left: 75px;">
+        Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
+      </span>
+      
+      <% if current_user?(feed_item.user) %>
+        <span class="g_delete">
+          <%= link_to "delete", feed_item,  :method => :delete,
+                                            :confirm => "Are you sure?",
+                                            :titel => feed_item.content,
+                                            :class => "g_delete" %>      
+        </span>
+      <% end %>
+      
+    </div>
+  </div>
+</div>

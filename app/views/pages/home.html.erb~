@@ -2,9 +2,11 @@
 
     <h1>What's up?</h1>
     
-    <%= render 'shared/error_messages' %>
+    <%= render 'shared/micropost_error_messages' %>
     <%= render 'shared/micropost_form' %>
     <%= render 'shared/user_info' %>
+    
+    <%= render 'shared/feed' %>
     
 <% else %>
 
