@@ -18,8 +18,8 @@ class MicropostsController < ApplicationController
   end
   
   def destroy
-    @micropost.destroy ?  flash[:success] => 'Micropost deleted.' : \
-                          flash[:error]   => 'Micropost NOT deleted.'
+    @micropost.destroy ?  flash[:success] = 'Micropost deleted.' \
+                       :  flash[:error]   = 'Micropost NOT deleted.'
     redirect_back_or root_path
   end
   
