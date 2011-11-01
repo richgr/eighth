@@ -60,7 +60,6 @@ describe MicropostsController do
       end
 
       it "should have a flash message" do
-        pending
         post :create, :micropost => @attr
         flash[:success].should =~ /micropost created/i
       end
@@ -69,6 +68,48 @@ describe MicropostsController do
 
   end
       
+  describe "DELETE 'destroy'" do
+
+    describe "for an unauthorized user" do
+      
+      before(:each) do
+        @user = Factory(:user)
+        wrong_user = Factory(:user, :email => Factory.next(:email))
+        test_sign_in(wrong_user)
+        @micropost = Factory(:micropost, :user => @user)
+      end
+      
+      it "should deny access (failure)" do
+        puts @micropost.id
+        puts @micropost.user_id
+        puts @micropost.content
+        delete :destroy, :id => @micropost
+        response.should redirect_to(root_path)
+      end
+
+    end
+    
+    describe "for authorized user" do
+      
+      before(:each) do
+        @user = Factory(:user)
+        test_sign_in(@user)
+        @micropost = Factory(:micropost, :user => @user)
+      end
+      
+      it "should destroy the micropost" do
+        lambda do
+          puts @micropost.id
+          puts @micropost.user_id
+          puts @micropost.content
+          delete :destroy, :id => @micropost
+        end.should change(Micropost, :count).by(-1)
+      end
+      
+    end
+     
+  end
+  
 end
 
 

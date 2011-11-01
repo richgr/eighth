@@ -411,7 +411,6 @@ describe UsersController do
       end
       
       it "should not include a different user's microposts" do
-        pending
         mp3 = Factory(:micropost,
                       :user => Factory(:user, :email => Factory.next(:email)))
       end
