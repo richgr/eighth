@@ -1,17 +1,38 @@
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function g_count(field,ctnfield,maxlimit) {
+ctnfield.disabled = false;
+ctnfield.value = maxlimit - field.value.length;
+ctnfield.disabled = false;
+}
+function textCounter(field,cntfield,maxlimit) {
+if (field.value.length > maxlimit) // if too long...trim it!
+field.value = field.value.substring(0, maxlimit);
+// otherwise, update 'characters left' counter
+else
+cntfield.value = maxlimit - field.value.length;
+}
+//  End -->
+</script>
 
 <div class="g_main">
-
 <%= form_for @micropost do |f| %>
   <%#= render 'shared/error_messages', :object => f.object %>
-  
   <div class="field">
-    <%= f.text_area :content %>
+    <%= f.text_area :content,
+                    :name => "micropost[content]",
+                    :onKeyDown => "g_count(document.form.micropost[content],document.form.g_counter,140)"
+    %>
   </div>
-  <div class="button">
+  <div class="button" style="display:inline-block;">
     <%= f.submit "Submit" %>
   </div>
-  
+  <div class="counter" style="display:inline-block; margin-left: 200px;">
+    <%= f.text_field :g_counter,  :size => 3, 
+                                  :value => 140, 
+                                  :name => "g_counter", 
+                                  :id => "g_counter" %>
+  </div>
 <% end %>
-
 </div>
 
