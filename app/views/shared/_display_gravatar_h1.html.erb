@@ -1,4 +1,7 @@
-    <h1>
-      <%= gravatar_for @user, :size => 30 %>
-      <%= @user.name %>
-    </h1>
+    <div class="gravatar_h1" style="display: inline-block;">
+      <h1>
+        <%= gravatar_for @user, :size => 30 %>
+        <%= @user.name %>
+      </h1>    
+    </div>
+    <%= render 'users/follow_form' if signed_in? %>

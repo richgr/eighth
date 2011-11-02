@@ -3,4 +3,6 @@
     <a href="<%= user_path(current_user) %>" class="user_name"><%= current_user.name %></a>
     <br />
     <a href="<%= user_path(current_user) %>" class="microposts" style="margin-left: 35px;"><%= pluralize(current_user.microposts.count, "micropost") %></a>
+    <br /><br />    
+    <%= render 'shared/stats' %>    
   </div>
