@@ -33,6 +33,6 @@ RSpec.configure do |config|
   
   ### def for sessions_controller_spec.rb
   def test_sign_in(user)
-    controller.current_user = user 
+    User.controller.sign_in(user)
   end
 end
