@@ -7,8 +7,6 @@
       
       <%= render 'shared/micropost_error_messages' %>
       <%= render 'shared/micropost_form' %>      
-
-      <%= render 'shared/feed' %>      
     </div>
     
     <div class="g_right round" id="g_right round" comment="user info">
@@ -16,6 +14,10 @@
       <%= render 'shared/stats' %>    
     </div>
 
+    <div class="g_left">
+      <%= render 'shared/feed' %>      
+    </div>
+    
   </div>
 
     

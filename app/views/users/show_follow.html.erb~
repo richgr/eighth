@@ -1,0 +1,26 @@
+  <div class="g_container">
+    
+    <div class="g_left">
+      
+      <% if @users.any? %>
+        <%= will_paginate @users %>
+        <ul class="users">
+          <%= render @users %>
+        </ul>
+        <%= will_paginate @users %>
+      <% end %>
+      
+    </div>
+    
+    <div class="g_right round">
+      <%= render 'shared/user_info' %>
+      <%= render 'shared/stats' %>
+      <div class="follow_list">
+        <% if @users.any? %>
+          <% @users.each do |user| %>
+            <%= link_to gravatar_for(user, :size => 30), user %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>

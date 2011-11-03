@@ -1,0 +1,3 @@
+<% unless current_user?(@user) %>
+    <%= render 'shared/micropost_form' %>
+<% end %>

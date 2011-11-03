@@ -37,10 +37,4 @@ cntfield.value = maxlimit - field.value.length;
   <% end %>
   </div>
 
-<% else %>
-  <div class="g_main">
-    user.name = <%#= user.name %>
-    <br />
-    current_user = <%= current_user.name %>
-  </div>
 <% end %>

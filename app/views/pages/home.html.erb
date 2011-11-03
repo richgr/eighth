@@ -5,8 +5,10 @@
     <div class="g_left">
       <h1>What's up?</h1>
       
+      <% @user = current_user() %>
       <%= render 'shared/micropost_error_messages' %>
-      <%= render 'shared/micropost_form' %>      
+      <%= render 'shared/micropost_form' %> 
+           
     </div>
     
     <div class="g_right round" id="g_right round" comment="user info">
