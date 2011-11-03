@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @users = @user.following.paginate(:page => params[:page],
                                       :per_page => 15)
-    @title = @user.name " is Following..."
+    @title = @user.name + " is Following..."
     render 'show_follow'
   end
   
@@ -30,7 +30,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @users = @user.followers.paginate(:page => params[:page],
                                       :per_page => 15)
-    @title = @user.name " is being Followed by ..."
+    @title = @user.name + " is being Followed by ..."
     render 'show_follow'
   end
   
