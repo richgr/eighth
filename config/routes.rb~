@@ -1,10 +1,14 @@
 Eighth::Application.routes.draw do
 
   resources :sessions, :only => [ :new, :create, :destroy ]
-
-  resources :microposts
-
-  resources :users
+  resources :microposts, :only => [ :create, :destroy]
+  resources :relationships
+  
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
 
   root :to => 'pages#home'
 

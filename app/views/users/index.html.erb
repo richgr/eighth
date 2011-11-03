@@ -1,17 +1,11 @@
-<h1><%= @title %></h1>
+<div class="g_container" id="g_container">
+  <h1><%= @title %></h1>
 
-<%= will_paginate %>
-
-<ul class="users">
-
-  <%#= note the less compact way to do things  %>
-  <%#= @users.each do |user| %>
-    <%#= render 'user', :user => user %>
-  <%#= end %>
-  
-  <%#= note the more compact way to do this %>
-  <%= render @users %>
-
-</ul>
-
-<%= will_paginate %>
+  <%= render 'shared/micropost_form' %>
+   
+  <%= will_paginate %>
+  <ul class="users">
+    <%= render @users %>
+  </ul>
+  <%= will_paginate %>
+</div>

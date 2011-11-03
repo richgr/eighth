@@ -71,6 +71,23 @@ describe "Users" do
     
   end
   
+  describe "follow_form in appropriate places" do
+    
+    it "should not display a follow/unfollow button for itself" do
+      user = Factory(:user)
+        visit signin_path
+        fill_in "Email",           :with => user.email
+        fill_in "Password",        :with => user.password
+        click_button
+        response.should_not have_selector('submit', 
+                                          :content => "Follow")
+        response.should_not have_selector('input', 
+                                          :content => "Unfollow")
+    end
+    
+  end
+  
+  
   
   
   

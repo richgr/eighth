@@ -197,8 +197,18 @@ describe UsersController do
       response.should have_selector("span.content", :content => mp2.content)
     end
 
+    describe "when signed in as another user" do
+      
+      it "should be successful" do
+        test_sign_in(Factory(:user, :email => Factory.next(:email)))
+        get :show, :id => @user
+        response.should be_success
+      end
+      
+    end
     
-  end  # end factories
+    
+  end  # end get show
   
   
   describe "Get 'edit'" do

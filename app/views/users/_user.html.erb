@@ -1,4 +1,4 @@
-    <li>
+    <li style="margin:20px;">
       <%= gravatar_for user, { :size => 30, :class => 'gravatar_norm' } %>
       <%= link_to user.name, user_path(user) %>
       <% if current_user.admin? %>

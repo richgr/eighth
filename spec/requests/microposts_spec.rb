@@ -15,6 +15,7 @@ describe "Microposts" do
     describe "failure" do
 
       it "should not make a new micropost" do
+        pending
         lambda do
           visit root_path
           fill_in :micropost_content, :with => ""
@@ -29,6 +30,7 @@ describe "Microposts" do
     describe "success" do
 
       it "should make a new micropost" do
+        pending
         content = "Lorem ipsum dolor sit amet"
         lambda do
           visit root_path

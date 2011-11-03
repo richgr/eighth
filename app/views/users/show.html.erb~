@@ -1,12 +1,22 @@
 
 <div class="g_container" id="g_container">
 
-  <%= render 'shared/display_gravatar_h1' %>
-  
-  <%= render 'shared/user_info' %>
-  
-  <%= render 'shared/micropost_form' %>
+  <div class="g_left">
+    <%= render 'shared/micropost_error_messages' %>
+      
+    <%= render 'shared/display_gravatar_h1' %>
     
-  <%= render 'shared/display_microposts' %>
+    <%= render 'users/follow_form' if signed_in? %>  
 
+    <%= render 'shared/micropost_form' %>
+  </div>
+
+  <div class="g_right round" id="g_right round" comment="user info">
+    <%= render 'shared/user_info' %>
+    <%= render 'shared/stats' %>    
+  </div>
+  
+  <div class="g_left">
+    <%= render 'shared/display_microposts' %>
+  </div>
 </div>

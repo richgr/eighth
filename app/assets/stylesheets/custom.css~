@@ -139,7 +139,7 @@ footer nav {
 
 .g_left {
   display: inline-block;
-  width: 390px;
+  width: 500px;
   padding: 20px;
   margin: 0;
 }   
@@ -170,6 +170,7 @@ footer nav {
 img.gravatar {
   border: 1px solid #999999;
   margin-bottom: -15px;
+  vertical-align: top;
 }
 
 img.gravatar_norm {
@@ -303,3 +304,41 @@ form.new_micropost textarea {
   margin-bottom: 0;
 }
 
+/* Follower/Following Sidebar Stats */
+
+div.stats {
+  border: 1px solid black;
+  width: 100%;
+}
+
+span.stat {
+  font-weight: none;
+  text-decoration: none;
+  font-style: italic;
+}
+
+div.stats_left {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+
+div.stats_right {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  float: right;
+}
+
+div.follow_form {
+  display: inline-block;
+  margin: 3px 3px 3px 30px;
+  padding: 0px;
+}
+
+div.follow_button {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
