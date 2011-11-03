@@ -39,7 +39,7 @@ clear; time bin/rspec spec/ ; beep -f 261.6 -l 2
 
 6) To precompile easily, try this:
 
-clear; rm -rf public/assets/*; bundle exec rake assets:precompile; beep
+clear; git rm -rf public/assets; bundle exec rake assets:precompile; beep;
 
 
 By the way
