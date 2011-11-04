@@ -1,5 +1,7 @@
-    <a href="<%= user_path(current_user) %>"><%= gravatar_for current_user, :size => 30 %></a>
-    <a href="<%= user_path(current_user) %>" class="user_name"><%= current_user.name %></a>
-    <br />
-    <a href="<%= user_path(current_user) %>" class="microposts" style="margin-left: 35px;"><%= pluralize(current_user.microposts.count, "micropost") %></a>
-    <br /><br />    
+    <div class="user_info_nil">
+      <a href="<%= user_path(current_user) %>"><%= gravatar_for @user, :size => 30 %></a>
+      <a href="<%= user_path(current_user) %>" class="user_name"><%= @user.name %></a>
+      <br />
+      <a href="<%= user_path(current_user) %>" class="microposts" style="margin-left: 35px;"><%= pluralize(@user.microposts.count, "micropost") %></a>
+      <br /><br />    
+    </div>

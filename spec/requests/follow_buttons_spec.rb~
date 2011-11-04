@@ -1,0 +1,39 @@
+require 'spec_helper'
+
+describe "FollowButtons" do
+  
+  before(:each) do
+    @user = Factory(:user)
+    @followed = Factory(:user, :email => Factory.next(:email))
+    @not_followed = Factory(:user, :email => Factory.next(:email))
+    visit signin_path
+    fill_in :email,     :with => @user.email
+    fill_in :password,  :with => @user.password
+    click_button
+  end
+   
+  
+  it "should show a Follow button if not following" do
+    visit user_path(@not_followed)
+    response.should have_selector('input', :value => 'Follow')
+  end
+  
+  it "should show an Unfollow button if following" do
+    @user.follow!(@followed)
+    visit user_path(@followed)
+    response.should have_selector('input', :value => 'Unfollow')    
+  end
+  
+  it "should show an Unfollow button after the Follow button is clicked" do
+    visit user_path(@not_followed)
+    click_button # Follow
+    response.should have_selector('input', :value => 'Unfollow')
+  end
+  
+  it "should show a Follow button after the Unfollow button is clicked" do
+    visit user_path(@followed)
+    click_button # Unfollow
+    response.should have_selector('input', :value => 'Follow')
+  end
+
+end
