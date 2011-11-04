@@ -12,10 +12,11 @@ class RelationshipsController < ApplicationController
   end
   
   def destroy
-    @user = Relationship.find(params[:id]).followed
+    @relationship = Relationship.find_by_id(params[:id])
+    @user = @relationship.followed 
     current_user.unfollow!(@user)
     respond_to do |format|
-      format.html { redirect_to(@user) }
+      format.html { redirect_to @user }
       format.js
     end
   end

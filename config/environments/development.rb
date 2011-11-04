@@ -27,4 +27,8 @@ Eighth::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Added this on advice of StackOverflow
+  # http://stackoverflow.com/questions/7225600/why-is-rails-ujs-ajaxsuccess-bind-being-called-twice
+  config.serve_static_assets = false
 end
