@@ -51,9 +51,8 @@ class User < ActiveRecord::Base
     encrypted_password == encrypt(submitted_password)
   end
   
-  def feed
-    # Holder for Ch 12
-    Micropost.where("user_id = ?", id)
+  def feed()
+    Micropost.from_users_followed_by(self)
   end
   
   def follow!(followed)

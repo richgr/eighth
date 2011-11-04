@@ -415,11 +415,13 @@ describe UsersController do
       end
       
       it "should include the user's microposts" do
+      # pending
         @user.feed.include?(@mp1).should be_true
         @user.feed.include?(@mp2).should be_true
       end
       
       it "should not include a different user's microposts" do
+      # pending
         mp3 = Factory(:micropost,
                       :user => Factory(:user, :email => Factory.next(:email)))
       end

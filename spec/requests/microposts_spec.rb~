@@ -24,7 +24,7 @@ describe "Microposts" do
 
       it "should display an error message for new blank micropost" do
         visit root_path
-        fill_in :micropost_content, :with => "blah"
+        fill_in :micropost_content, :with => ""
         click_button
         response.should have_selector("div#error_explanation")
       end
